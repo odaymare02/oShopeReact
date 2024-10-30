@@ -1,0 +1,22 @@
+.no_underline{
+    text-decoration: none !important ;
+}
+.brand{
+    color: var(--logoC) !important;
+    font-family: var(--subFont);
+    font-weight: 800;
+}
+.navLink{
+font-family: var(--mainFont);
+}
+.isScrolled{
+    background-color:#ffffffd2 !important;
+}
+.no_underline{
+    text-decoration: none !important ;
+    color: var(--logoC);
+}
+.logoutLogo{
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,15 @@
+/* .ownbutton{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: var(--mainFont);
+}
+
+.ownbutton:hover {
+    background-color:#fff;
+    color: #000;
+     box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
+} */

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --mainFont:"Poppins";
+    --subFont:"Volkhov";
+    --logoC:#484848;
+}
+
+body{
+    background-color: #fff;
+    font-family: var(--mainFont);
+}
+button{
+    font-family: var(--mainFont);
+}
+h3,p,h5{
+    font-family: var(--mainFont);
+}
+section{
+    margin-top: 120px;
+    font-family: var(--mainFont);
+}
+section .title{
+    font-family: var(--subFont);
+    color: var(--logoC);
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+section .title:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 2px;
+    background-color: var(--logoC);
+}
+.btn-outline-main {
+    --bs-btn-color: #000;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #000;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #000;
+    --bs-gradient: none;
+  }
+  
+.btn-outline-white {
+    --bs-btn-color: #fff1ffbe;
+    --bs-btn-border-color: #fff1ffbe;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff1ffbe;
+    --bs-btn-hover-border-color: #fff1ffbe;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #fff1ffbe;
+    --bs-btn-active-border-color: #fff1ffbe;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff1ffbe;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fff1ffbe;
+    --bs-gradient: none;
+  }
+  /* index.css or App.css */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #484848;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #393939 ;
+  transform: translateY(-2px);
+}

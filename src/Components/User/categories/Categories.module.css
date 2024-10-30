@@ -1,0 +1,8 @@
+.imgCat{
+    width: 40% !important;
+}
+@media (max-width:992px){
+    .imgg{
+        width: 100% !important;
+    }
+} 

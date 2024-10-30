@@ -1,0 +1,10 @@
+.loginTitle{
+    font-family: var(--mainFont);
+    color: var(--mainColor);
+    font-size: 20px;
+}
+.no_bodrde{
+    border: none !important;
+    border-bottom: 5px solid #9D9D9D !important;
+    outline: none;
+}

@@ -1,0 +1,8 @@
+.oday{
+    position: sticky; /* Make the element sticky */
+    top: 0; /* Position the sticky element at the top of the viewport */
+    background-color: lightcoral; /* Background color */
+    padding: 10px; /* Some padding */
+    border: 1px solid darkred; /* Optional border */
+    z-index: 10000; /* Ensure it's on top of other content */
+}
