@@ -1,24 +1,20 @@
-import React from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import aloimg from "./slid.jpg"; // Imported image
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import styles from "./s.module.css"; // Import CSS module
-// Import required modules
-import { Parallax, Pagination, Navigation,Autoplay } from 'swiper/modules';
-import MyButton from '../../../reusableComponents/Button/MyButton';
-import { Link } from 'react-router-dom';
+import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export default function Slides() {
   return (
-    <div className='mt-5'>
+    <div className="mt-5">
       <Swiper
         style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
         }}
         speed={600}
         autoplay={{
@@ -27,7 +23,7 @@ export default function Slides() {
         }}
         parallax={true}
         pagination={{ clickable: true }}
-        modules={[Parallax, Pagination, Navigation,Autoplay]}
+        modules={[Parallax, Pagination, Navigation, Autoplay]}
         className={styles.swiper}
       >
         <div
@@ -41,52 +37,63 @@ export default function Slides() {
 
         <SwiperSlide className={styles.swiperSlide}>
           <div className={`${styles.info} mw-50 `}>
-          <div className={styles.title} data-swiper-parallax="-300">
-            welcom to Oshope
+            <div className={styles.title} data-swiper-parallax="-300">
+              welcom to Oshope
+            </div>
+            <div className={styles.subtitle} data-swiper-parallax="-200">
+              best offer you need
+            </div>
+            <div className={styles.text} data-swiper-parallax="-100">
+              <button className="btn btn-outline-dark">
+                <Link
+                  to={"/AllProd"}
+                  className="text-decoration-none text-light "
+                >
+                  {" "}
+                  shope now{" "}
+                </Link>
+              </button>
+            </div>
           </div>
-          <div className={styles.subtitle} data-swiper-parallax="-200">
-            best offer you need
-          </div>
-          <div className={styles.text} data-swiper-parallax="-100">
-            <button className='btn btn-outline-dark'>
-             <Link to={"/AllProd"} className='text-decoration-none text-light ' > shope now </Link> 
-            </button>
-          </div>
-          </div>
-         
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
           <div className={`${styles.info} mw-50 `}>
-          <div className={styles.title} data-swiper-parallax="-300">
-            welcom to Oshope
-          </div>
-          <div className={styles.subtitle} data-swiper-parallax="-200">
-            best offer you need
-          </div>
-          <button className='btn btn-outline-dark'>
-             <Link to={"/AllProd"} className='text-decoration-none text-light ' > shope now </Link> 
+            <div className={styles.title} data-swiper-parallax="-300">
+              welcom to Oshope
+            </div>
+            <div className={styles.subtitle} data-swiper-parallax="-200">
+              best offer you need
+            </div>
+            <button className="btn btn-outline-dark">
+              <Link
+                to={"/AllProd"}
+                className="text-decoration-none text-light "
+              >
+                {" "}
+                shope now{" "}
+              </Link>
             </button>
           </div>
-         
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
           <div className={`${styles.info} mw-50 `}>
-          <div className={styles.title} data-swiper-parallax="-300">
-            welcom to Oshope
-          </div>
-          <div className={styles.subtitle} data-swiper-parallax="-200">
-            best offer you need
-          </div>
-           <button className='btn btn-outline-dark'>
-             <Link to={"/AllProd"} className='text-decoration-none text-light ' > shope now </Link> 
+            <div className={styles.title} data-swiper-parallax="-300">
+              welcom to Oshope
+            </div>
+            <div className={styles.subtitle} data-swiper-parallax="-200">
+              best offer you need
+            </div>
+            <button className="btn btn-outline-dark">
+              <Link
+                to={"/AllProd"}
+                className="text-decoration-none text-light "
+              >
+                {" "}
+                shope now{" "}
+              </Link>
             </button>
           </div>
-         
         </SwiperSlide>
-       
-
-        {/* Add additional slides here */}
-        
       </Swiper>
     </div>
   );
